@@ -1,0 +1,125 @@
+section#slider{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 !important;
+    overflow: hidden;/*rolagem fique escondida msm que o conteudo vaze da tela*/
+  }
+
+  .titulo_projetos{
+    text-align: center;
+    color:#A6F750B7;
+  }
+  
+  .slider__content{
+    width: 400%;
+    height: auto;
+    display: flex;
+  }
+  
+  .slider__content input{/*todos os inputs dentro de slider_content*/
+   display: none;/*inputs escondidos*/
+  }
+
+  .slide__box{
+   width: 25%;
+   height: auto;
+   position: relative;
+   text-align: center;
+   transition: 1s;
+  }
+  
+  .slide__box img{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 60%;/*centralizou a imagem*/
+  }
+  
+  .paragrafo_slide{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    margin-top: 12px;
+  }
+  
+  .nav__manual, .nav__auto{
+    position: absolute;/*para que a navegaca manual fique trabalhando apenas dentro dessa caixa, sem vazar e sobrepor conteudo*/
+    width:100% ;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav__manual .manual__btn, .nav-auto div{
+    border: 2px solid blueviolet;
+    padding:10px ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:0.2s;
+  }
+  
+  .nav__manual .manual__btn:not(:last-child), .nav-auto div:not(:last-child){/* ultimo filho )quero que todos os elementos que tenha a classe .manual__btn tenha o seguinte estilo, menoso ultimo, no caso a ultima bolinha*/
+   margin-right:10px ;
+  }
+  
+  .nav__manual .manual__btn:hover{
+    background-color:#A6F750B7;
+  }
+  
+  #radio1:checked ~ .nav-auto .auto__btn1{/*quando radio 1 estiver marcado eu quero que aconteça algo com esse btn1*/
+    background-color: aqua
+    ;
+  }
+  
+  #radio2:checked ~ .nav-auto .auto__btn2{
+    background-color: aqua;
+    ;
+  }
+  
+  #radio3:checked ~ .nav-auto .auto__btn3{
+    background-color: aqua;
+  }
+  
+  #radio4:checked ~ .nav-auto .auto__btn4{
+    background-color: aqua;
+  }
+  
+  #radio1:checked ~ .primeiro{
+    margin-left: 0%;
+  }
+  
+  #radio2:checked ~ .primeiro{
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .primeiro{
+    margin-left: -50%;
+  }
+  
+  #radio4:checked ~ .primeiro{
+    margin-left: -75%;
+  }
+  
+  @media(max-width: 768px) {
+    .slider__content{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+  
+    .nav__manual{
+        margin-bottom: 60px;
+    }
+  
+    .img__desktop{
+        margin-bottom: 55px;
+    }
+
+    .titulo_projetos{
+      position: relative;
+      top: 250px;
+    }
+  
+  }

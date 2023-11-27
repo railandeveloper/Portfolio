@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;       
+}
+
+.titulo__contato{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #A6F750B7;
+}
+
+#sessao__contato{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content:center; 
+    margin-bottom: 100px;
+}
+
+.container__contato{
+    border: solid 3px #303030;
+    padding: 30px;
+    box-shadow:  0 15px 30px rgba(22, 22, 22, 0.3);
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.container__contato:hover{
+    border: solid 3px #A6F750B7; 
+}
+
+.formulario {
+    width: 40%;
+    min-width: 350px;
+    background-color: #ffffff;
+    border-radius:8px;
+    box-shadow:  0 15px 30px rgba(22, 22, 22, 0.3);
+    padding: 20px;
+}
+
+.bloco, .carta{
+    min-width: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px soid #c1c1c1;
+    margin-top: 20px;
+    height:40px;
+    padding-left: 10px;
+}
+
+.carta{
+    height: 200px;
+    padding-top: 10px;
+}
+
+.botao{
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    width: 70%;
+    min-width: 320px;
+    border: none;
+    border-radius: 5px;
+    background: #7f00ff;
+    color: white;
+    cursor: pointer;
+}
+
+.botao:hover{
+   opacity: 0.8;
+}
+
+.botao:active{
+    opacity: 0.6;
+}
+
+
+
+.redes img{
+    width: 50px;
+}
+
+.lista__redes{
+    list-style-type: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.lista__redes:hover{
+    background-color:#A6F750B7;
+}
+
+.links_rede{
+   text-decoration: none;
+   color: white;
+}
+
+.links_rede:hover{
+    color: black;
+}
+
+@media (max-width: 900px){
+    #sessao__contato{
+        display: inline;
+    }
+
+    .titulo__contato{
+        margin-bottom: 40px;
+    }
+    
+    .container__contato{
+       flex-direction: column;
+       border: none;
+       margin: auto;
+    }
+
+    .redes{
+       display:flex;
+       gap: 30px;
+       padding: 30px;
+    }
+}

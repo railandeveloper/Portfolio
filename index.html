@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="contato.css">
+   
+</head>
+<body>
+    <header> 
+         <nav class="container__navegador">
+
+         <div class="container__titulo__navegador">
+           <h1 class="titulo__navegador">Portfolio</h1>
+         </div>
+
+           <ul class="navegador">
+
+            <li class="lista__navegador">
+                <a class="link__navegador" href="#sobre" id="link-sobre">Sobre</a></li>
+
+            <li class="lista__navegador">
+                <a class="link__navegador" href="#slider" id="link-projetos">Projetos</a></li>
+
+            <li class="lista__navegador">
+                <a class="link__navegador" href="#apresentacao__habilidades"  id="link-habilidades">Habilidades</a></li>
+
+            <li class="lista__navegador">
+                <a class="link__navegador" href="#sessao__contato" 
+                 id="link-contato">Contato</a></li>
+
+            <li class="botao__navegador">
+                <button onclick="mudarCores()"><img class="logo__sol" src="/imagens/sol.png" alt="logo sol"></button>
+              </li>  
+
+           </ul>
+
+           <div class="menu__hamburguer">
+            <img src="/imagens/Menu.svg" alt="">
+            <nav class="container__navegador-hamburguer">
+                  <ul class="navegador-hamburguer">
+       
+                   <li class="lista__navegador-hamburguer">
+                       <a class="link__navegador-hamburguer" href="#sobre" id="link-sobre">Sobre</a></li>
+       
+                   <li class="lista__navegador-hamburguer">
+                       <a class="link__navegador-hamburguer" href="#slider" id="link-projetos">Projetos</a></li>
+       
+                   <li class="lista__navegador-hamburguer">
+                       <a class="link__navegador-hamburguer" href="#apresentacao__habilidades"  id="link-habilidades">Habilidades</a></li>
+       
+                   <li class="lista__navegador-hamburguer">
+                       <a class="link__navegador-hamburguer" href="#sessao__contato" 
+                        id="link-contato">Contato</a></li>
+        </nav>
+         </div>
+        </header>
+              
+          <main class="container">
+            <div class="bloco__bem__vindo">
+                <h1>Bem vindo :)</h1>
+                <p id="texto-interativo"></p>
+                <a class="botao__curriculo" href="https://drive.google.com/file/d/1ylGZodC-UMKYFX-1QZVBJYza7TikJlj1/view?usp=drive_link" target="_blank" download="seu_curriculo.pdf">Dowload CV</a>
+            </div>    
+           
+                 <img class="imagem__note" src="/imagens/hacker.jpg" alt="alguem mexendo no nootbook">
+          </main>
+
+          <section class="sessao" id="sobre">
+               <div class="sobre_mim">
+                <h2 class="titulo_sobre">Sobre Mim</h2>
+               </div>
+<!-- aqui -->
+               <div class="container__sobre">
+                <div>
+                   <img class="minha__imagem" src="/imagens/minhafoto.jpg" alt="minha foto">
+                </div>
+                    
+              <div class="informacoes">
+                <ul class="container__informacoes">
+                    <li>Olá! Meu nome é Railan Aparecido dos santos e tenho 25 anos;</li>
+                    <li>Estou cursando Análise e Desenvolvimento de Sistemas na Faculdade impacta tecnolgia, segundo semestre com previsão de termino em 06/2025;</li>
+                    <li>Inicie Meus estudos em progamação no incio de 2023;</li>
+                    <li>Moro em Diadema/SP;</li>
+                    <li>
+                        Atualmente, estou focado em aprimorar minhas habilidades como desenvolvedor Front-end, mas desejo futuramente me tornar um desenvolvedor Full Stack;
+                    </li>
+                    <li> Tenho sólidos conhecimentos em HTML, CSS, JavaScript e Conhecimento prévio com Git e controle de versão;</li>
+                    <li>Estou em busca da minha primeira oportunidade como Estagiario ou Desenvolvedor Jr;</li>
+                </ul>
+                </div>
+
+               </div>
+          </section>
+
+          <section class="sessao" id="apresentacao__habilidades">
+            <div class="container__habilidades">
+            <div class="caixa__titulo__habilidades">
+                <h3 class="titulo__tecnologias">Minhas Habilidades</h3>
+                  </div> 
+            <div class="container__links__tecnlogias">
+                      
+               <a class="link__tecnologias" href="#"><img class="imagem__tecnologias" src="/imagens/html-logo.png" alt="logo html"></a>
+   
+               <a class="link__tecnologias" href="#"><img class="imagem__tecnologias" src="/imagens/css-logo.png" alt="logo css"></a>
+   
+               <a class="link__tecnologias" href="#"><img class="imagem__tecnologias" src="/imagens/javascript-logo.png" alt="logo Javascript"></a>
+   
+               <a class="link__tecnologias" href="#"><img class="imagem__tecnologias" src="/imagens/git.png" alt="logo git"></a>
+   
+               <a class="link__tecnologias" href="#"><img class="imagem__tecnologias" src="/imagens/Githublink.png" alt="logo github"></a>
+            </div>
+        </div>
+       </section>
+
+
+          <div class="titulo_projetos"><h2> Primeiros Projetos</h2></div>
+       <section class="sessao" id="slider">
+        <div class="slider__content">
+ 
+         <input type="radio" name="btn-radio" id="radio1">
+         <input type="radio" name="btn-radio" id="radio2">
+         <input type="radio" name="btn-radio" id="radio3">
+         <input type="radio" name="btn-radio" id="radio4">
+ 
+         <div class="slide__box primeiro">
+               <a href="https://relogio-digital-puce.vercel.app/" target="_blank"><img class="img__desktop" src="imagens/relogio.png" alt="slide relogio digital"></a>
+               <p class="paragrafo_slide">Relogio digital desenvolvido em Html, Css e Javascript</p>
+         </div>
+ 
+         <div class="slide__box">
+             <a href="https://alura-ebon-phi.vercel.app/" target="_blank"><img class="img__desktop" src="/imagens/Alura.png" alt="slide Alura"></a>
+               <p class="paragrafo_slide">Projeto desenvolvido junto a plataforma da alura</p>
+       </div>
+ 
+       <div class="slide__box">
+         <a href="https://6527ffe61c8ef920962bb2d4--charming-cranachan-0b47ab.netlify.app/" target="_blank"><img class="img__desktop" src="/imagens/front.png" alt="slide cursofrontend"></a>
+         <p class="paragrafo_slide">Projeto desenvolvido com Html e Css</p>
+   </div>
+ 
+   <div class="slide__box">
+     <a href="https://projeto-droids.vercel.app/" target="_blank"><img class="img__desktop" src="/imagens/droids.png" alt="slide projeto droids"></a>
+     <p class="paragrafo_slide">Projeto desenvolvido com Html, css, junto a plataforma CursoEmVideo do youtube</p>
+ </div>
+ 
+   <div class="nav__auto">
+       <div class="auto__btn1"></div>
+       <div class="auto__btn2"></div>
+       <div class="auto__btn3"></div>
+       <div class="auto__btn4"></div>
+   </div>  
+ 
+     <div class="nav__manual">
+         <label for="radio1" class="manual__btn"></label>
+         <label for="radio2" class="manual__btn"></label>
+         <label for="radio3" class="manual__btn"></label>
+         <label for="radio4" class="manual__btn"></label>
+     </div>
+          
+        </div>
+     </section>
+
+     <div class="titulo__contato">
+        <h2>Entre em contato</h2>
+    </div>
+
+    <section class="sessao" id="sessao__contato">
+        <div class="container__contato">
+     <form class="formulario" action="https://formsubmit.co/railan-1994@hotmail.com" method="POST">
+        <h1>Formulário de Contato</h1>
+
+        <input class="bloco" type="hidden" name="_next" value="#">
+
+        <input class="bloco" type="text" name="name" placeholder=" Digite Seu Nome ..." required>
+        
+        <input class="bloco" type="email" name="email" placeholder="E-mail" required>
+
+        <textarea class="carta" name="message" placeholder="Digite sua mensagem..." required></textarea>
+
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+        
+       <div class="redes">
+        <ul>
+         <li class="lista__redes">
+            <a class="links_rede" href="mailto:railan-1994@hotmail.com" >
+                <img src="/imagens/email2.png" alt="logo email">
+                <h3>E-mail</h3>
+            </a>
+        </li>
+</ul>
+        <li class="lista__redes">
+            <a class="links_rede" href="https://www.linkedin.com/in/railan-santos-9713a7163/" target="_blank">
+                <img src="/imagens/linkedin-branco(1).png" alt="logo linkedin">
+                <h3>linkedin</h3>
+            </a>
+        </li>
+
+        <li class="lista__redes">
+            <a class="links_rede" href="https://github.com/railandeveloper" target="_blank">
+                <img src="/imagens/github-branco.png" alt="logo email">
+                <h3>github</h3>
+            </a>
+        </li>
+     </ul>
+       </div>
+
+      </div>
+    </section>
+      
+    <div id="botao-topo">
+        <img class="flecha up" src="/imagens/seta_branca (1).png" alt="seta branca para cima">
+    </div>
+     
+    <footer class="rodape">
+        <p class="paragrafo__rodape">Copyright ©
+            Railan Aparecido dos Santos · 2023</p>
+    </footer>
+ 
+     <script src="/index.js"></script>
+     <script src="/navegacao.js"></script>
+     <script src="/menuhamburguer.js"></script>
+</body>
+</html>
