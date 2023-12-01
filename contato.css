@@ -30,10 +30,6 @@
     text-align: center;
 }
 
-.container__contato:hover{
-    border: solid 3px #A6F750B7; 
-}
-
 .formulario {
     width: 40%;
     min-width: 350px;
